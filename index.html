@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ragdoll Punch — Playable Review</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --ink:#1d2330; --sub:#5b6475; --line:#e3e6ec; --accent:#2f6fe4; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.6 system-ui,-apple-system,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .sub { color: var(--sub); margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
+  .card h2 { font-size: 17px; margin: 0 0 6px; }
+  .card p { margin: 0 0 12px; color: var(--sub); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  a.btn { display: inline-block; padding: 10px 14px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  a.btn.alt { background: #eef2fb; color: var(--accent); }
+  code { background: #eef0f4; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+  ul { margin: 6px 0 0; padding-left: 18px; color: var(--sub); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Ragdoll Punch</h1>
+  <p class="sub">YouTube Playables 검토용 빌드 · Build for YouTube Playables review</p>
+
+  <section class="card">
+    <h2>① Unity WebGL (YouTube 공식 템플릿) — 제출용</h2>
+    <p>유튜브 플레이어블 SDK 연동본. 공식 테스트 모음(Test suite)에 아래 주소를 넣어 확인할 수 있습니다.</p>
+    <div class="links">
+      <a class="btn" href="webgl/index.html">한국어판 플레이</a>
+      <a class="btn alt" href="webgl/index.html?lang=en">English (no dialogue)</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>② Playworks 변환 HTML (단일 파일)</h2>
+    <p>광고용 플레이어블 파이프라인(Playworks)으로 만든 단일 HTML 버전입니다.</p>
+    <div class="links">
+      <a class="btn" href="html/index.html">한국어판 플레이</a>
+      <a class="btn alt" href="html/index.html?lang=en">English (no dialogue)</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>게임 요약</h2>
+    <ul>
+      <li>래그돌 캐릭터를 무기로 때려 점수를 내는 세로 화면 게임</li>
+      <li>모드: 타임어택(60초) / 스테이지 선택(5단계)</li>
+      <li>상점: 주먹으로 시작, 골드로 무기 6종 구매 (타임어택 점수의 0.1%, 스테이지 첫 클리어 10골드)</li>
+      <li>캐릭터는 맞기 전까지 랜덤으로 춤을 춘다</li>
+      <li>언어: 한국어는 말풍선 대사, 영어는 대사 없음(“Take the L” 춤만 예외)</li>
+      <li>유튜브 밖에서 열면 언어는 한국어가 기본 — 주소에 <code>?lang=en</code> 을 붙이면 영어판</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
